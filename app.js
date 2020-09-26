@@ -84,21 +84,28 @@ function pressDecimal(decimalButton) {
 };
 
 function pressSum(sumButton) {
+   let topNumber = Number(outputTop.value);
+   let bottomNumber = Number(outputBottom.value);
    switch (operation) {
       case '+':
-         sum = Number(outputTop.value) + Number(outputBottom.value);
+         sum = topNumber + bottomNumber;
          break;
 
       case '-':
-         sum = Number(outputTop.value) - Number(outputBottom.value);
+         sum = topNumber - bottomNumber;
          break;
 
       case '*':
-         sum = Number(outputTop.value) * Number(outputBottom.value);
+         sum = topNumber * bottomNumber;
          break;
 
       case '/':
-         sum = Number(outputTop.value) / Number(outputBottom.value);
+         let divider = bottomNumber;
+         if (divider === 0) {
+            divider = 1;
+         }
+
+         sum = topNumber / divider;
          break;
    }
    
