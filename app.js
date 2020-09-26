@@ -56,7 +56,7 @@ function pressNumber(numberButton) {
 
 function pressOperation(operationButton) {
    if (operationButton) {
-      operation += operationButton.textContent;
+      operation = operationButton.textContent;
 
       outputTop.value = outputBottom.value;
       outputBottom.value = '0';
