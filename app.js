@@ -97,7 +97,7 @@ function pressSum(sumButton) {
          sum = Number(outputTop.value) * Number(outputBottom.value);
          break;
 
-      case '*':
+      case '/':
          sum = Number(outputTop.value) / Number(outputBottom.value);
          break;
    }
