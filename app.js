@@ -6,7 +6,7 @@ const decimalButton = document.querySelector('[data-decimal]');
 const sumButton = document.querySelector('[data-sum]');
 const outputBottom = document.querySelector('#display-output-bottom');
 const outputTop = document.querySelector('#display-output-top');
-let sum = 0;
+let result = 0;
 let operation;
 
 
@@ -60,8 +60,6 @@ function pressOperation(operationButton) {
 
       outputTop.value = outputBottom.value;
       outputBottom.value = '0';
-
-      sum = Number(outputTop.value) + Number(outputBottom.value);
    }
 };
 
@@ -88,15 +86,15 @@ function pressSum(sumButton) {
    let bottomNumber = Number(outputBottom.value);
    switch (operation) {
       case '+':
-         sum = topNumber + bottomNumber;
+         result = topNumber + bottomNumber;
          break;
 
       case '-':
-         sum = topNumber - bottomNumber;
+         result = topNumber - bottomNumber;
          break;
 
       case '*':
-         sum = topNumber * bottomNumber;
+         result = topNumber * bottomNumber;
          break;
 
       case '/':
@@ -105,10 +103,10 @@ function pressSum(sumButton) {
             divider = 1;
          }
 
-         sum = topNumber / divider;
+         result = topNumber / divider;;
          break;
    }
    
    outputTop.value = '0';
-   outputBottom.value = sum;
+   outputBottom.value = result;
 };
