@@ -6,7 +6,7 @@ const decimalButton = document.querySelector('[data-decimal]');
 const sumButton = document.querySelector('[data-sum]');
 const outputBottom = document.querySelector('#display-output-bottom');
 const outputTop = document.querySelector('#display-output-top');
-let sum = 0;
+let result = 0;
 let operation;
 
 
@@ -60,8 +60,6 @@ function pressOperation(operationButton) {
 
       outputTop.value = outputBottom.value;
       outputBottom.value = '0';
-
-      sum = Number(outputTop.value) + Number(outputBottom.value);
    }
 };
 
@@ -86,18 +84,18 @@ function pressDecimal(decimalButton) {
 function pressSum(sumButton) {
    switch (operation) {
       case '+':
-         sum = Number(outputTop.value) + Number(outputBottom.value);
+         result = Number(outputTop.value) + Number(outputBottom.value);
          break;
 
       case '-':
-         sum = Number(outputTop.value) - Number(outputBottom.value);
+         result = Number(outputTop.value) - Number(outputBottom.value);
          break;
 
       case '*':
-         sum = Number(outputTop.value) * Number(outputBottom.value);
+         result = Number(outputTop.value) * Number(outputBottom.value);
          break;
    }
    
    outputTop.value = '0';
-   outputBottom.value = sum;
+   outputBottom.value = result;
 };
