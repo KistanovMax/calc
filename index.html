@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Calculator</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="container">
+      <div class="base">
+         <div class="display">
+            <input disabled type="text" name="display-output" value="0" id="display-output-bottom">
+            <input disabled type="text" name="display-output-2" value="0" id="display-output-top">
+         </div>
+         <div class="main-block">
+            <button class="btn wide" type="button" data-all-clear>ac</button>
+            <button class="btn" type="button" data-clear>del</button>
+            <button class="btn" type="button" data-operation>/</button>
+            <button class="btn" type="button" data-number>1</button>
+            <button class="btn" type="button" data-number>2</button>
+            <button class="btn" type="button" data-number>3</button>
+            <button class="btn" type="button" data-operation>*</button>
+            <button class="btn" type="button" data-number>4</button>
+            <button class="btn" type="button" data-number>5</button>
+            <button class="btn" type="button" data-number>6</button>
+            <button class="btn" type="button" data-operation>+</button>
+            <button class="btn" type="button" data-number>7</button>
+            <button class="btn" type="button" data-number>8</button>
+            <button class="btn" type="button" data-number>9</button>
+            <button class="btn" type="button" data-operation>-</button>
+            <button class="btn" type="button" data-decimal>.</button>
+            <button class="btn" type="button" data-number>0</button>
+            <button class="btn wide" type="button" data-sum>=</button>
+         </div>
+      </div>
+   </div>
+   <script src="app.js"></script>
+</body>
+</html>

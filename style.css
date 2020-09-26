@@ -1,0 +1,79 @@
+body {
+   padding: 0;
+   margin: auto 0;
+   background: linear-gradient(to right, #00aaff, #00ff6c);
+   font-family: Gotham Rounded, sans-serif;
+
+   -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.container {
+   display: flex;
+   justify-content: center;
+   margin-top: 180px;
+}
+
+.display {
+   display: flex;
+   flex-direction: column-reverse;
+   justify-content: space-around;
+   align-items: flex-end;
+   height: 95px;
+   width: 315px;
+   background: rgba(0, 0, 0, .75);
+   color: white;
+}
+
+input {
+   padding-right: 10px;
+   padding-bottom: 10px;
+   text-align: right;
+   color: white;
+   font-size: 36px;
+   width: 300px;
+   height: 30%;
+   border: none;
+   background: none;
+}
+
+#display-output-top {
+   padding-top: 5px;
+   font-size: 20px;
+}
+
+.main-block {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   height:395px;
+   width: 315px;
+   background: #e6fbf7;
+}
+
+.btn {
+   width: 77px;
+   height: 77px;
+   font-size: 32px;
+   background: #bff2f1;
+   border: none;
+   text-transform: uppercase;
+}
+
+.btn:hover {
+   background: #e6fbf7;
+   cursor: pointer;
+}
+
+.btn:focus {
+   outline: none;
+}
+
+.btn.wide {
+   width: 156px;
+}
